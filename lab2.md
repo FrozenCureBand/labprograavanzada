@@ -1,3 +1,4 @@
+***see raw version for screenshots links***
 # Lab 2  Programacion Avanzada 2017
 
 **Jose Marroquin 1158016**
