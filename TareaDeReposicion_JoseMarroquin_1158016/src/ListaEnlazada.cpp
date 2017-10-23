@@ -1,7 +1,7 @@
 /*
  * ListaEnlazada.cpp
  *
- *  Created on: Oct 22, 2017
+ *  Created on: Oct 17, 2017
  *      Author: Jose
  */
 
