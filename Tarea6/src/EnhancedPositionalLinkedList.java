@@ -17,9 +17,6 @@ public class EnhancedPositionalLinkedList<E> implements PositionalList<E>{
 		// TODO Auto-generated method stub
 		return null;
 	}
-		//end#fragment first
-		  /** Insert the given element after the given position;
-		    * O(1) time  */
 		  public Position<E> addAfter(Position<E> p, E element) 
 		      throws InvalidPositionException {
 		    DNode<E> v = checkPosition(p);
@@ -28,18 +25,12 @@ public class EnhancedPositionalLinkedList<E> implements PositionalList<E>{
 		    v.getNext().setPrev(newNode);
 		    v.setNext(newNode);
 		  }
-		  //begin#fragment remove
-		  /** Insert the given element at the beginning of the list, returning
-		    * the new position; O(1) time  */
 		  public Position<E> addFirst(E element) {
 		    numElts++;
 		    DNode<E> newNode = new DNode<E>(header, header.getNext(), element);
 		    header.getNext().setPrev(newNode);
 		    header.setNext(newNode);
 		  }
-		  //end#fragment remove
-		  /** Insert the given element at the end of the list, returning
-		    * the new position; O(1) time  */
 		  public Position<E> addLast(E element) {
 		    numElts++;
 		    DNode<E> oldLast = trailer.getPrev();
